@@ -18,19 +18,19 @@ export default function ContactSection() {
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <Mail className="h-6 w-6 text-accent" />
-                <a href="mailto:anish.ojha@example.com" className="text-lg text-muted-foreground hover:text-primary">anish.ojha@example.com</a>
+                <a href="mailto:anishojha82@gmail.com" className="text-lg text-muted-foreground hover:text-primary">anishojha82@gmail.com</a>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="h-6 w-6 text-accent" />
-                <span className="text-lg text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-lg text-muted-foreground">+91-8939738086</span>
               </div>
               <div className="flex items-center gap-4">
                 <Linkedin className="h-6 w-6 text-accent" />
-                 <Link href="#" target="_blank" rel="noopener noreferrer" className="text-lg text-muted-foreground hover:text-primary">linkedin.com/in/anishojha</Link>
+                 <Link href="https://www.linkedin.com/in/anish-ojha/" target="_blank" rel="noopener noreferrer" className="text-lg text-muted-foreground hover:text-primary">linkedin.com/in/anish-ojha</Link>
               </div>
               <div className="flex items-center gap-4">
                 <Github className="h-6 w-6 text-accent" />
-                <Link href="#" target="_blank" rel="noopener noreferrer" className="text-lg text-muted-foreground hover:text-primary">github.com/anishojha</Link>
+                <Link href="https://github.com/Anishgoofle" target="_blank" rel="noopener noreferrer" className="text-lg text-muted-foreground hover:text-primary">github.com/Anishgoofle</Link>
               </div>
             </div>
           </div>
