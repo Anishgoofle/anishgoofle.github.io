@@ -14,7 +14,7 @@ export default function AboutSection() {
               <CardContent className="p-0">
                 <Image
                   src="https://picsum.photos/600/600"
-                  alt="A portrait of Alex Doe"
+                  alt="A portrait of Anish Ojha"
                   width={600}
                   height={600}
                   className="aspect-square object-cover"
@@ -25,7 +25,7 @@ export default function AboutSection() {
           </div>
           <div className="md:col-span-3 space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Hello! I'm Alex, a frontend engineer with over a decade of experience in crafting beautiful, performant, and accessible digital products. My journey in tech began with a curiosity for how things work, which evolved into a career dedicated to building intuitive interfaces that delight users.
+              Hello! I'm Anish, a frontend engineer with over a decade of experience in crafting beautiful, performant, and accessible digital products. My journey in tech began with a curiosity for how things work, which evolved into a career dedicated to building intuitive interfaces that delight users.
             </p>
             <h3 className="text-xl font-semibold text-primary">My Philosophy</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">

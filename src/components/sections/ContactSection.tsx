@@ -18,7 +18,7 @@ export default function ContactSection() {
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <Mail className="h-6 w-6 text-accent" />
-                <a href="mailto:alex.doe@example.com" className="text-lg text-muted-foreground hover:text-primary">alex.doe@example.com</a>
+                <a href="mailto:anish.ojha@example.com" className="text-lg text-muted-foreground hover:text-primary">anish.ojha@example.com</a>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="h-6 w-6 text-accent" />
@@ -26,11 +26,11 @@ export default function ContactSection() {
               </div>
               <div className="flex items-center gap-4">
                 <Linkedin className="h-6 w-6 text-accent" />
-                 <Link href="#" target="_blank" rel="noopener noreferrer" className="text-lg text-muted-foreground hover:text-primary">linkedin.com/in/alexdoe</Link>
+                 <Link href="#" target="_blank" rel="noopener noreferrer" className="text-lg text-muted-foreground hover:text-primary">linkedin.com/in/anishojha</Link>
               </div>
               <div className="flex items-center gap-4">
                 <Github className="h-6 w-6 text-accent" />
-                <Link href="#" target="_blank" rel="noopener noreferrer" className="text-lg text-muted-foreground hover:text-primary">github.com/alexdoe</Link>
+                <Link href="#" target="_blank" rel="noopener noreferrer" className="text-lg text-muted-foreground hover:text-primary">github.com/anishojha</Link>
               </div>
             </div>
           </div>
