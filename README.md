@@ -1,8 +1,6 @@
-# Engineer's Codex: A Personal Portfolio
+# Anish's Portfolio
 
-This is a personal portfolio website for a skilled engineer, designed to showcase their work, experience, and technical abilities. It's a modern, responsive single-page application built with Next.js and styled with Tailwind CSS.
-
-Built with [Firebase Studio](https://firebase.google.com/studio).
+This is a portfolio website built to showcase my work, experience, and technical abilities. It's a modern, responsive single-page application built with Next.js and styled with Tailwind CSS.
 
 ## Tech Stack
 
