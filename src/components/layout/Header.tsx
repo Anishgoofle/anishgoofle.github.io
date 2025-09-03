@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Menu, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Drawer, DrawerContent, DrawerTrigger, DrawerClose } from '@/components/ui/drawer';
-import { cn } from '@/lib/utils';
+import { cx } from '@/lib/utils';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header
-      className={cn(
+      className={cx(
         'sticky top-0 z-50 w-full transition-all duration-300',
         scrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
       )}
