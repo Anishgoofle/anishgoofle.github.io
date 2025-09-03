@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-secondary">
@@ -19,7 +18,7 @@ export default function Footer() {
           </Link>
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} AO. All rights reserved.
+          &copy; 2025 Anish Ojha. All rights reserved.
         </p>
       </div>
     </footer>
