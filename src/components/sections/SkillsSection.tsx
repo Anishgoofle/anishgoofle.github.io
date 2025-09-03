@@ -10,6 +10,7 @@ const skillsData = {
       { name: 'JavaScript (ES6+)' },
       { name: 'HTML5 & CSS3/Sass' },
       { name: 'Tailwind CSS' },
+      { name: 'Styled Components'}
     ],
   },
   'Tooling & DevOps': {

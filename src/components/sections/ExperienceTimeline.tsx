@@ -5,7 +5,7 @@ const experiences = [
   {
     role: "Senior Web Engineer",
     company: "Phonepe",
-    period: "2023 - Present",
+    period: "Sep 2023 - Present",
     description: "Led the development of a next-generation design system and component library, improving developer velocity by 40%.",
     contributions: [
       "Architected and implemented a scalable frontend for a flagship SaaS product.",
@@ -16,22 +16,25 @@ const experiences = [
   {
     role: "Frontend Developer",
     company: "Paytm",
-    period: "2021 - 2023",
+    period: "Mar 2021 - Sep 2023",
     description: "Developed and maintained responsive user interfaces for a variety of client websites and web applications.",
     contributions: [
-      "Translated complex design mockups into pixel-perfect, interactive web pages.",
-      "Collaborated with backend teams to integrate RESTful APIs.",
-      "Introduced modern frontend tools and workflows, such as React and webpack.",
+      "Built and optimized scalable React applications, improving load speed and reducing native app size by 11 MB with platform-agnostic integration.",
+      "Delivered end-to-end features (search, offers, payments, checkout flows including EMI and promo offers) integrated with RESTful APIs.",
+      "Enhanced user experience with performance optimizations, skeleton loaders, and close collaboration with designers for UI/UX quality.",
+      "Improved reliability and team standards by implementing Auth interceptor with auto-retry, setting up Sentry/Kibana monitoring, mentoring juniors, and leading code reviews."
     ],
   },
   {
     role: "Junior Web Developer",
     company: "MatchMove Pay Pvt Ltd",
-    period: "2018 - 2021",
+    period: "Aug 2018 - Mar 2021",
     description: "Assisted in the development and maintenance of company and client websites using HTML, CSS, and JavaScript.",
     contributions: [
-      "Built and styled web pages from wireframes and design documents.",
+      "Worked on an innovative remittance platform UI enabling businesses to cut costs on overseas transfers compared to traditional banks.",
       "Performed cross-browser testing and debugging.",
+      "Built interactive dashboards with Chart.js to visualize user activity statistics.",
+      "Implemented responsive design to ensure seamless mobile experience.",
       "Gained foundational knowledge in version control with Git.",
     ],
   },
