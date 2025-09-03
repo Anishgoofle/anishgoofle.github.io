@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'E-commerce Platform',
     description: 'A feature-rich e-commerce site with a custom CMS, product filtering, and a secure checkout process.',
-    image: 'https://picsum.photos/600/400?random=1',
+    image: 'https://source.unsplash.com/600x400/?online,store',
     imageHint: 'online store',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
     liveUrl: '#',
@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'Project Management Tool',
     description: 'A collaborative tool for teams to manage tasks, track progress, and communicate effectively.',
-    image: 'https://picsum.photos/600/400?random=2',
+    image: 'https://source.unsplash.com/600x400/?dashboard,analytics',
     imageHint: 'dashboard analytics',
     stack: ['React', 'Redux', 'Firebase', 'Framer Motion'],
     liveUrl: '#',
@@ -27,7 +27,7 @@ const projects = [
   {
     title: 'Portfolio Website',
     description: 'A personal portfolio to showcase my skills and projects, built with a focus on performance and design.',
-    image: 'https://picsum.photos/600/400?random=3',
+    image: 'https://source.unsplash.com/600x400/?portfolio,website',
     imageHint: 'portfolio website',
     stack: ['HTML', 'CSS', 'Javascript'],
     liveUrl: 'https://anishojha.netlify.app',
