@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Component, Server, Database, Cog, TestTubeDiagonal, GitBranch, Briefcase } from 'lucide-react';
+import { Component, GitBranch, TestTubeDiagonal } from 'lucide-react';
 
 const skillsData = {
   'Frontend': {
@@ -13,23 +13,12 @@ const skillsData = {
       { name: 'Tailwind CSS' },
     ],
   },
-  'Backend': {
-    icon: Server,
-    skills: [
-      { name: 'Node.js & Express' },
-      { name: 'Python & Django' },
-      { name: 'REST & GraphQL APIs' },
-      { name: 'Firebase' },
-      { name: 'PostgreSQL' },
-    ],
-  },
   'Tooling & DevOps': {
     icon: GitBranch,
     skills: [
       { name: 'Git & GitHub' },
-      { name: 'Webpack & Vite' },
+      { name: 'Webpack & Rollup' },
       { name: 'Docker' },
-      { name: 'Vercel & Netlify' },
       { name: 'CI/CD Pipelines' },
     ],
   },
@@ -38,7 +27,6 @@ const skillsData = {
     skills: [
       { name: 'Jest' },
       { name: 'React Testing Library' },
-      { name: 'Cypress' },
       { name: 'Playwright' },
     ],
   },
@@ -54,7 +42,7 @@ export default function SkillsSection() {
         <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
           A collection of technologies I use to bring ideas to life. I'm always learning and adapting to new tools.
         </p>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {Object.entries(skillsData).map(([category, { icon: Icon, skills }]) => (
             <Card key={category} className="shadow-lg">
               <CardHeader>
