@@ -13,7 +13,7 @@ export default function AboutSection() {
             <Card className="overflow-hidden rounded-xl shadow-lg w-full max-w-sm">
               <CardContent className="p-0">
                 <Image
-                  src="https://source.unsplash.com/600x600/?frontend"
+                  src="https://picsum.photos/600/600"
                   alt="A portrait of Anish Ojha"
                   width={600}
                   height={600}
