@@ -4,8 +4,8 @@ import { Badge } from '@/components/ui/badge';
 const experiences = [
   {
     role: "Senior Web Engineer",
-    company: "Innovate Inc.",
-    period: "2020 - Present",
+    company: "Phonepe",
+    period: "2023 - Present",
     description: "Led the development of a next-generation design system and component library, improving developer velocity by 40%.",
     contributions: [
       "Architected and implemented a scalable frontend for a flagship SaaS product.",
@@ -15,8 +15,8 @@ const experiences = [
   },
   {
     role: "Frontend Developer",
-    company: "Creative Solutions",
-    period: "2017 - 2020",
+    company: "Paytm",
+    period: "2021 - 2023",
     description: "Developed and maintained responsive user interfaces for a variety of client websites and web applications.",
     contributions: [
       "Translated complex design mockups into pixel-perfect, interactive web pages.",
@@ -26,8 +26,8 @@ const experiences = [
   },
   {
     role: "Junior Web Developer",
-    company: "Tech Starters",
-    period: "2015 - 2017",
+    company: "MatchMove Pay Pvt Ltd",
+    period: "2018 - 2021",
     description: "Assisted in the development and maintenance of company and client websites using HTML, CSS, and JavaScript.",
     contributions: [
       "Built and styled web pages from wireframes and design documents.",

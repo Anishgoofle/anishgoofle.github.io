@@ -23,7 +23,7 @@ export default function HeroSection() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Link href="/Anish_Ojha.pdf" target="_blank" rel="noopener noreferrer">
                 Resume <Download className="ml-2" />
               </Link>
             </Button>
