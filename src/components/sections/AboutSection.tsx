@@ -32,7 +32,7 @@ export default function AboutSection() {
               I believe that great software is born from a blend of art and science. My frontend philosophy centers on three pillars: user-centricity, robust architecture, and continuous improvement. I strive to write code that is not only functional but also maintainable and scalable, ensuring long-term value for any project.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring hiking trails, contributing to open-source projects, or experimenting with new coffee brewing methods.
+              When I'm not coding, you can find me listening to music, exploring stuff related to space, watching anime or experimenting with my cooking skills :P
             </p>
           </div>
         </div>
