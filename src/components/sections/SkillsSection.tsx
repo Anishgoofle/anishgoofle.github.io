@@ -6,7 +6,6 @@ const skillsData = {
     icon: Component,
     skills: [
       { name: 'React & Next.js' },
-      { name: 'Vue & Nuxt.js' },
       { name: 'TypeScript' },
       { name: 'JavaScript (ES6+)' },
       { name: 'HTML5 & CSS3/Sass' },
