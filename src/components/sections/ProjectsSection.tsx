@@ -29,9 +29,9 @@ const projects = [
     description: 'A personal portfolio to showcase my skills and projects, built with a focus on performance and design.',
     image: 'https://picsum.photos/600/400?random=3',
     imageHint: 'portfolio website',
-    stack: ['Gatsby', 'GraphQL', 'Styled Components'],
-    liveUrl: '#',
-    githubUrl: '#',
+    stack: ['HTML', 'CSS', 'Javascript'],
+    liveUrl: 'https://anishojha.netlify.app',
+    githubUrl: 'https://github.com/Anishgoofle/portfolio',
   },
 ];
 
