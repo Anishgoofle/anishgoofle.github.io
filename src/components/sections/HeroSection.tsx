@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { MoveRight } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -23,8 +23,8 @@ export default function HeroSection() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="#contact">
-                Contact Me <MoveRight className="ml-2" />
+              <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                Resume <Download className="ml-2" />
               </Link>
             </Button>
           </div>
