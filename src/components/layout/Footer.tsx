@@ -19,7 +19,7 @@ export default function Footer() {
           </Link>
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} Engineer's Codex. All rights reserved.
+          &copy; {currentYear} AO. All rights reserved.
         </p>
       </div>
     </footer>

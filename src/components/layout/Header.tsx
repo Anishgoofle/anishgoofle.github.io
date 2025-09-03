@@ -37,7 +37,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl">
           <Code2 className="h-6 w-6 text-accent" />
-          <span>Engineer's Codex</span>
+          <span>AO</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -66,7 +66,7 @@ export default function Header() {
               <nav className="flex flex-col gap-6 pt-12">
                 <Link href="/" className="flex items-center gap-2 font-bold text-xl mb-4" onClick={() => setIsMobileMenuOpen(false)}>
                   <Code2 className="h-6 w-6 text-accent" />
-                  <span>Engineer's Codex</span>
+                  <span>AO</span>
                 </Link>
                 {navLinks.map((link) => (
                   <SheetClose asChild key={link.href}>
