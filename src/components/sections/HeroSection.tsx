@@ -11,7 +11,7 @@ export default function HeroSection() {
             Anish Ojha
           </h1>
           <p className="mt-4 text-lg text-accent md:text-xl font-medium">
-            Senior Frontend Engineer
+            Senior Web Engineer
           </p>
           <p className="mt-6 max-w-2xl mx-auto text-base text-muted-foreground md:text-lg">
             I specialize in building exceptional, high-quality websites and applications. With a passion for clean code and user-centric design, I turn complex problems into elegant digital experiences.

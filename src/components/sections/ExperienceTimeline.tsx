@@ -3,7 +3,7 @@ import { Badge } from '@/components/ui/badge';
 
 const experiences = [
   {
-    role: "Senior Frontend Engineer",
+    role: "Senior Web Engineer",
     company: "Innovate Inc.",
     period: "2020 - Present",
     description: "Led the development of a next-generation design system and component library, improving developer velocity by 40%.",
