@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import heroImg from '@/assets/anish.jpeg;
 
 export default function AboutSection() {
   return (
@@ -13,12 +14,11 @@ export default function AboutSection() {
             <Card className="overflow-hidden rounded-xl shadow-lg w-full max-w-sm">
               <CardContent className="p-0">
                 <Image
-                  src="https://picsum.photos/600/600"
+                  src={heroImg}
                   alt="A portrait of Anish Ojha"
                   width={600}
                   height={600}
                   className="aspect-square object-cover"
-                  data-ai-hint="frontend"
                 />
               </CardContent>
             </Card>
