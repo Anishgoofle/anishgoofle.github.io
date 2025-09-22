@@ -6,11 +6,15 @@ const experiences = [
     role: "Senior Web Engineer",
     company: "Phonepe",
     period: "Sep 2023 - Present",
-    description: "Led the development of a next-generation design system and component library, improving developer velocity by 40%.",
+    description: "Worked on improving consumer facing phonepe's merchant platform",
     contributions: [
-      "Architected and implemented a scalable frontend for a flagship SaaS product.",
-      "Mentored junior engineers and established best practices for code reviews.",
-      "Optimized application performance, reducing load times by 60%.",
+      "Introduced TypeScript across the project, improving code robustness and reducing runtime errors; migrated all packages to TypeScript v5 and integrated the TS compiler with Rollup builds.",
+      "Implemented Zustand stores for efficient state management, handling authentication and session expiry; built the Payment Gateway (PG) screen for secure transactions.",
+      "Took full ownership of Monorepo migration, scaffolding the transition, migrating utils/constants/interfaces to shared packages, centralizing CSRF handling, and enabling dynamic build triggers via YAML.",
+      "Elevated unit test coverage (PFB: 23% → 75%, Galactus: 35% → 80%) by designing team-wide test strategies and enhancing custom render utilities for centralized state in test cases.",
+      "Resolved 200+ SonarQube code smells (85% reduction) and security hotspots, greatly improving overall code health.",
+      "Migrated Galactus into the monorepo, streamlining dependencies, enabling local builds/tests, and eliminating redundant publishes.",
+      "Led reCAPTCHA → hCaptcha migration, including a feasibility POC, integration, and detailed Confluence guide, reducing developer effort by 10–20%."
     ],
   },
   {
