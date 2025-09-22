@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import heroImg from '@/assets/anish.jpeg;
+import heroImg from '@/assets/anish.jpeg';
 
 export default function AboutSection() {
   return (
