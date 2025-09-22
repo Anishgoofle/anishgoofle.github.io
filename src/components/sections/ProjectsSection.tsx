@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/componen
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
-import chatImg from '@/assets/chat.png';
+import chatImg from '@/assets/chat-app.png';
 
 const projects = [
   {
