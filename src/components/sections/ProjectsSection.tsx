@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
 import chatImg from '@/assets/chat-app.png';
+import portfolioImg from '@/assets/image.png';
 
 const projects = [
   {
@@ -28,7 +29,7 @@ const projects = [
   {
     title: 'Old Portfolio Website',
     description: 'A personal portfolio to showcase my skills and projects, built with a focus on performance and design.',
-    image: 'https://picsum.photos/600/400',
+    image: portfolioImg,
     imageHint: 'portfolio website',
     stack: ['HTML', 'CSS', 'Javascript'],
     liveUrl: 'https://anishojha.netlify.app',
