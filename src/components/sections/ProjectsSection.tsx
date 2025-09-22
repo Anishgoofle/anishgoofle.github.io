@@ -16,16 +16,16 @@ const projects = [
     githubUrl: '#',
   },
   {
-    title: 'Project Management Tool',
-    description: 'A collaborative tool for teams to manage tasks, track progress, and communicate effectively.',
+    title: 'Chat app',
+    description: 'This is a very simple prototype of a chat application where you can sign in by entering your name and a room id and share the room link with people you want to interact.',
     image: 'https://picsum.photos/600/400',
-    imageHint: 'dashboard analytics',
-    stack: ['React', 'Redux', 'Firebase', 'Framer Motion'],
-    liveUrl: '#',
-    githubUrl: '#',
+    imageHint: 'chat-app',
+    stack: ['React', 'Socket-io'],
+    liveUrl: 'https://roundtable-tk.vercel.app',
+    githubUrl: 'https://github.com/Anishgoofle/chat-app',
   },
   {
-    title: 'Portfolio Website',
+    title: 'Old Portfolio Website',
     description: 'A personal portfolio to showcase my skills and projects, built with a focus on performance and design.',
     image: 'https://picsum.photos/600/400',
     imageHint: 'portfolio website',
@@ -33,6 +33,7 @@ const projects = [
     liveUrl: 'https://anishojha.netlify.app',
     githubUrl: 'https://github.com/Anishgoofle/portfolio',
   },
+  
 ];
 
 export default function ProjectsSection() {
