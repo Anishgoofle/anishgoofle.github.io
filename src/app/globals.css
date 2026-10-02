@@ -3,53 +3,55 @@
 @tailwind utilities;
 
 @layer base {
+  /* Light theme: warm off-white, ink text, deep teal accent (AA contrast on white) */
   :root {
-    --background: 210 29% 97%;
-    --foreground: 225 27% 15%;
-    --card: 210 29% 100%;
-    --card-foreground: 225 27% 15%;
-    --popover: 210 29% 100%;
-    --popover-foreground: 225 27% 15%;
-    --primary: 225 27% 26%;
+    --background: 40 20% 98%;
+    --foreground: 222 30% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 30% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 30% 12%;
+    --primary: 222 30% 12%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 210 29% 94%;
-    --secondary-foreground: 225 27% 26%;
-    --muted: 210 29% 94%;
-    --muted-foreground: 210 29% 55%;
-    --accent: 177 39% 45%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 84.2% 60.2%;
+    --secondary: 40 16% 94%;
+    --secondary-foreground: 222 30% 12%;
+    --muted: 40 16% 94%;
+    --muted-foreground: 220 11% 36%;
+    --accent: 176 62% 27%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 98%;
-    --border: 210 29% 89%;
-    --input: 210 29% 89%;
-    --ring: 177 39% 45%;
+    --border: 40 10% 87%;
+    --input: 40 10% 84%;
+    --ring: 176 62% 27%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
+  /* Dark theme: deep ink, brighter teal so it still reads on dark */
   .dark {
-    --background: 220 20% 12%;
-    --foreground: 0 0% 98%;
-    --card: 220 20% 14%;
-    --card-foreground: 0 0% 98%;
-    --popover: 220 20% 12%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 225 27% 26%;
-    --secondary: 220 20% 18%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 220 20% 18%;
-    --muted-foreground: 210 29% 65%;
-    --accent: 177 39% 45%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --background: 222 22% 8%;
+    --foreground: 40 15% 96%;
+    --card: 222 20% 11%;
+    --card-foreground: 40 15% 96%;
+    --popover: 222 22% 9%;
+    --popover-foreground: 40 15% 96%;
+    --primary: 40 15% 96%;
+    --primary-foreground: 222 30% 12%;
+    --secondary: 222 20% 12%;
+    --secondary-foreground: 40 15% 96%;
+    --muted: 222 20% 14%;
+    --muted-foreground: 218 14% 68%;
+    --accent: 173 58% 52%;
+    --accent-foreground: 222 30% 8%;
+    --destructive: 0 62.8% 40%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 20% 22%;
-    --input: 220 20% 22%;
-    --ring: 177 39% 45%;
+    --border: 222 15% 20%;
+    --input: 222 15% 22%;
+    --ring: 173 58% 52%;
   }
 }
 
@@ -62,5 +64,97 @@
   }
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  ::selection {
+    background: hsl(var(--accent) / 0.25);
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.6) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.6) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 30% 25%, #000 25%, transparent 75%);
+    mask-image: radial-gradient(ellipse 70% 60% at 30% 25%, #000 25%, transparent 75%);
+  }
+  .animate-fade-up {
+    animation: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .animate-drift { animation: drift 16s ease-in-out infinite; }
+  .animate-word-cycle { animation: word-cycle 12s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
+
+  /* Tech strip: two identical tracks side by side, each slides one full width */
+  .marquee {
+    display: flex;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+  .marquee-track {
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.5rem;
+    padding-right: 2.5rem;
+    animation: marquee 45s linear infinite;
+  }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, 24px) scale(1.12); }
+}
+@keyframes marquee {
+  to { transform: translateX(-100%); }
+}
+/* Five stacked lines (four words + a copy of the first); each line is 20% of the stack */
+@keyframes word-cycle {
+  0%, 22% { transform: translateY(0); }
+  25%, 47% { transform: translateY(-20%); }
+  50%, 72% { transform: translateY(-40%); }
+  75%, 97% { transform: translateY(-60%); }
+  100% { transform: translateY(-80%); }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-fade-up,
+  .animate-drift,
+  .animate-word-cycle,
+  .marquee-track {
+    animation: none;
+  }
+  .marquee {
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .marquee-track {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .marquee-track[aria-hidden='true'] {
+    display: none;
   }
 }

@@ -43,16 +43,19 @@ export default function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values); // In a real app, you'd send this to a server
+    // There is no backend behind this form, so hand the message to the visitor's
+    // own email client instead of pretending it was sent.
+    const subject = encodeURIComponent(`Portfolio message from ${values.name}`);
+    const body = encodeURIComponent(`${values.message}\n\n\u2014 ${values.name} (${values.email})`);
+    window.location.href = `mailto:anishojha82@gmail.com?subject=${subject}&body=${body}`;
     toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
+      title: "Opening your email app",
+      description: "Your message is drafted. Press send in your email app to deliver it.",
     });
-    form.reset();
   }
 
   return (
-    <Card className="shadow-lg">
+    <Card className="shadow-none">
       <CardContent className="p-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -100,7 +103,7 @@ export default function ContactForm() {
               )}
             />
             <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-              {form.formState.isSubmitting ? "Sending..." : "Send Message"}
+              Compose Email
             </Button>
           </form>
         </Form>
