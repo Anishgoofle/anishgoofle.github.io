@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 export default function Footer() {
 
   return (
-    <footer className="bg-secondary">
+    <footer className="border-t border-border">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-8 md:flex-row md:px-6">
         <div className="flex gap-4">
           <Link href="https://github.com/Anishgoofle" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -18,7 +18,7 @@ export default function Footer() {
           </Link>
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; 2025 Anish Ojha. All rights reserved.
+          &copy; {new Date().getFullYear()} Anish Ojha. All rights reserved.
         </p>
       </div>
     </footer>

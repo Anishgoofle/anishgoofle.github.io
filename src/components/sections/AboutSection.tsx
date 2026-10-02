@@ -1,40 +1,38 @@
-import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
-import heroImg from '@/assets/anish.jpeg';
+import SectionHeading from '@/components/SectionHeading';
+
+const facts = [
+  { label: 'Focus', value: 'Fintech web applications' },
+  { label: 'Currently', value: 'Senior Software Engineer, Frontend at PhonePe' },
+  { label: 'Also', value: 'Frontend interviewer and mentor' },
+  { label: 'Outside work', value: 'Music, space, anime and cooking' },
+];
 
 export default function AboutSection() {
   return (
-    <section id="about" className="w-full py-16 md:py-24 bg-secondary">
+    <section id="about" className="w-full border-t border-border py-20 md:py-28">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tight text-center text-primary sm:text-4xl font-headline">
-          About Me
-        </h2>
-        <div className="mt-12 grid gap-12 md:grid-cols-5 md:gap-8 items-center">
-          <div className="md:col-span-2 flex justify-center">
-            <Card className="overflow-hidden rounded-xl shadow-lg w-full max-w-sm">
-              <CardContent className="p-0">
-                <Image
-                  src={heroImg}
-                  alt="A portrait of Anish Ojha"
-                  width={600}
-                  height={600}
-                  className="aspect-square object-cover"
-                />
-              </CardContent>
-            </Card>
-          </div>
-          <div className="md:col-span-3 space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Hello! I'm Anish, a frontend engineer around 7 years of experience in crafting beautiful, performant, and accessible digital products. My journey in tech began with a curiosity for how things work, which evolved into a career dedicated to building intuitive interfaces that delight users.
+        <SectionHeading index="01" label="About" title="Building interfaces people trust with their money" />
+        <div className="mt-12 grid gap-12 lg:grid-cols-5">
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground lg:col-span-3">
+            <p>
+              Hi, I'm Anish, a frontend engineer with 8+ years of experience building performant, accessible products for
+              fintech. My journey in tech began with a curiosity for how things work, and it has grown into a
+              career of building interfaces that people can trust with their money.
             </p>
-            <h3 className="text-xl font-semibold text-primary">My Philosophy</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I believe that great software is born from a blend of art and science. My frontend philosophy centers on three pillars: user-centricity, robust architecture, and continuous improvement. I strive to write code that is not only functional but also maintainable and scalable, ensuring long-term value for any project.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me listening to music, exploring stuff related to space, watching anime or experimenting with my cooking skills :P
+            <p>
+              I believe great software is a blend of art and science. My approach centres on three things, users first,
+              robust architecture, and continuous improvement. I try to write code that is functional, maintainable and
+              scalable, so it keeps its value long after the first release.
             </p>
           </div>
+          <dl className="space-y-5 rounded-xl border border-border bg-card p-6 lg:col-span-2">
+            {facts.map((f) => (
+              <div key={f.label}>
+                <dt className="font-code text-xs uppercase tracking-wider text-accent">{f.label}</dt>
+                <dd className="mt-1 text-foreground">{f.value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </div>
     </section>
